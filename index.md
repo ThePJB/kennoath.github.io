@@ -1,13 +1,4 @@
-# Pages test
-ah yes very interesting how does this work
+# Kennoath its a blog
 
-[some other page](other_page.md)
-
-- this
-- is
-- a
-- list
-
-### small heading
-
-lorem ipsum
+## Dev diaries
+[Reduxlandkings 1 - Motivation & Architecture](reduxlandkings1.md)
