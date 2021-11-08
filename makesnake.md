@@ -12,7 +12,9 @@ This is the first game I made, its pretty easy. The hardest part is definitely s
 
 To install SDL2 its probably something like `sudo apt install sdl2` or `sudo dnf install sdl2` depending on your distro.
 
+To install a C compiler you might need to do `sudo apt install gcc` or equivalent.
 
+Pro tip: if you try to run a command in your terminal and it says 'command not found' (and you typed it correctly) that probably means you need to install the thing you tried to just run
 
 ### C Quality of Life improvements
 
