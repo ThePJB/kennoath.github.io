@@ -32,8 +32,8 @@ If you want any more information refer to the [SDL wiki](https://wiki.libsdl.org
 
 Also just google for more examples or any more information, there is heaps of stuff out there regarding SDL2.
 
-```C
-#include <SDL2/SDL.h>   // hopefully your package manager put the SDL2 headers in the right spot
+```c
+#include <SDL2/SDL.h> //I hope your package manager put the SDL2 headers in the right spot
 #include <stdio.h>
 
 int main(int argc, char** argv) {
