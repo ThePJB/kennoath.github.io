@@ -28,10 +28,9 @@ We learn best by example. Below is a quick one that I cooked up.
 
 You can also refer to [lazy foo sdl2 tutorial](https://lazyfoo.net/tutorials/SDL/) for a more thorough introduction.
 
-
-
-
 If you want any more information refer to the [SDL wiki](https://wiki.libsdl.org/) on a function or type and it will have a good explanation for you.
+
+Also just google for more examples or any more information, there is heaps of stuff out there regarding SDL2.
 
 ```C
 #include <SDL2/SDL.h>   // hopefully your package manager put the SDL2 headers in the right spot
@@ -42,7 +41,8 @@ int main(int argc, char** argv) {
     int yres = 480;
 
     // 1. first function you call to use SDL
-    // it returns some value < 0 if it failed to initialize, this is how we check and handle the error
+    // it returns some value < 0 if it failed to initialize
+    // this is how we check and handle the error
     if (SDL_Init(SDL_INIT_VIDEO) < 0) {
         printf("failed to initialize sdl %s\n", SDL_GetError());
         return 1;
@@ -60,7 +60,7 @@ int main(int argc, char** argv) {
         SDL_WINDOW_SHOWN
     );
 
-    // this is how we handle a failure to create a window (it returns a null pointer if it failed)    
+    // the create window function returns a null pointer if it fails
     if (window == NULL) {
         printf("failed to create window %s\n", SDL_GetError());
         return 1;
@@ -92,8 +92,8 @@ int main(int argc, char** argv) {
         // Handle input / events
         SDL_Event e;
         while (SDL_PollEvent(&e)) {
-            // The SDL_Event type might seem kind of complicated but I promise its pretty easy to 
-            // dig through its fields to get the information you want
+            // The SDL_Event type might seem kind of complicated but I promise its pretty
+            // easy to dig through its fields to get the information you want
             // just follow examples or check out the wiki where it is explained clearly
             // https://wiki.libsdl.org/SDL_Event
             if (e.type == SDL_QUIT) {
