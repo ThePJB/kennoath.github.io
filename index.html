@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        h3 {
+            color: white;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #222;
+        }
+        /* canvas {
+            width: 70%;
+            height: 70%;
+        } */
+        .gallery {
+            /* display: flex; */
+            /* flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+            border: 1px solid #F00;
+            align-items: center;
+            justify-content: center; */
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            max-width: 1200px;
+            margin: 0 auto;
+
+        }
+        .gallery-item {
+            /* justify-content: center;
+             */
+            /* width: 33.0%; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* margin: 1px;
+            border: 1px solid #0F0; */
+            /* justify-content: center;
+            align-items: center; */
+        }
+        /* .gallery-item canvas {
+            flex-grow: 1;
+        } */
+        /* .gallery-item h2 {
+            flex-basis: 100%;
+            text-align: center;
+        } */
+        canvas {
+            /* width: 100%;
+  height: 200px;
+  background-color: lightgray; */
+            width: 320px;
+            height: 180px; /* Set canvas height to 100% of its parent flex-item */
+            /* max-width: 100%; Ensure canvas doesn't exceed parent width */
+            /* border: 1px solid #FFF; Optional border style */
+            /* box-sizing: border-box; Include border in the total width */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Shader Gallery</h1>
+    <div class="gallery">
+    
+<div class="gallery-item">
+    <h3>00-basic-trail[<a href="./00-basic-trail/index.html">+</a>][<a href="./00-basic-trail/00-basic-trail.txt">src</a>]</h3>
+    <canvas id="canvas-00-basic-trail" width="320" height="180"></canvas>
+    <script src="./00-basic-trail/main.js"></script>
+</div>
+
+
+<div class="gallery-item">
+    <h3>01-diffuse[<a href="./01-diffuse/index.html">+</a>][<a href="./01-diffuse/01-diffuse.txt">src</a>]</h3>
+    <canvas id="canvas-01-diffuse" width="320" height="180"></canvas>
+    <script src="./01-diffuse/main.js"></script>
+</div>
+
+
+<div class="gallery-item">
+    <h3>02-smoke[<a href="./02-smoke/index.html">+</a>][<a href="./02-smoke/02-smoke.txt">src</a>]</h3>
+    <canvas id="canvas-02-smoke" width="320" height="180"></canvas>
+    <script src="./02-smoke/main.js"></script>
+</div>
+
+
+<div class="gallery-item">
+    <h3>03-flow[<a href="./03-flow/index.html">+</a>][<a href="./03-flow/03-flow.txt">src</a>]</h3>
+    <canvas id="canvas-03-flow" width="320" height="180"></canvas>
+    <script src="./03-flow/main.js"></script>
+</div>
+
+
+<div class="gallery-item">
+    <h3>03-gridflow orthog-norm[<a href="./03-gridflow orthog-norm/index.html">+</a>][<a href="./03-gridflow orthog-norm/03-gridflow orthog-norm.txt">src</a>]</h3>
+    <canvas id="canvas-03-gridflow orthog-norm" width="320" height="180"></canvas>
+    <script src="./03-gridflow orthog-norm/main.js"></script>
+</div>
+
+
+<div class="gallery-item">
+    <h3>04-smoke-circles-mouse[<a href="./04-smoke-circles-mouse/index.html">+</a>][<a href="./04-smoke-circles-mouse/04-smoke-circles-mouse.txt">src</a>]</h3>
+    <canvas id="canvas-04-smoke-circles-mouse" width="320" height="180"></canvas>
+    <script src="./04-smoke-circles-mouse/main.js"></script>
+</div>
+
+
+<div class="gallery-item">
+    <h3>04-smoke-circles-new-nucleate-up[<a href="./04-smoke-circles-new-nucleate-up/index.html">+</a>][<a href="./04-smoke-circles-new-nucleate-up/04-smoke-circles-new-nucleate-up.txt">src</a>]</h3>
+    <canvas id="canvas-04-smoke-circles-new-nucleate-up" width="320" height="180"></canvas>
+    <script src="./04-smoke-circles-new-nucleate-up/main.js"></script>
+</div>
+
+
+<div class="gallery-item">
+    <h3>04-smoke-circles-new-nucleate[<a href="./04-smoke-circles-new-nucleate/index.html">+</a>][<a href="./04-smoke-circles-new-nucleate/04-smoke-circles-new-nucleate.txt">src</a>]</h3>
+    <canvas id="canvas-04-smoke-circles-new-nucleate" width="320" height="180"></canvas>
+    <script src="./04-smoke-circles-new-nucleate/main.js"></script>
+</div>
+
+
+<div class="gallery-item">
+    <h3>04-smoke-circles-new-slow[<a href="./04-smoke-circles-new-slow/index.html">+</a>][<a href="./04-smoke-circles-new-slow/04-smoke-circles-new-slow.txt">src</a>]</h3>
+    <canvas id="canvas-04-smoke-circles-new-slow" width="320" height="180"></canvas>
+    <script src="./04-smoke-circles-new-slow/main.js"></script>
+</div>
+
+
+<div class="gallery-item">
+    <h3>04-smoke-circles-orig[<a href="./04-smoke-circles-orig/index.html">+</a>][<a href="./04-smoke-circles-orig/04-smoke-circles-orig.txt">src</a>]</h3>
+    <canvas id="canvas-04-smoke-circles-orig" width="320" height="180"></canvas>
+    <script src="./04-smoke-circles-orig/main.js"></script>
+</div>
+
+
+<div class="gallery-item">
+    <h3>06-gol[<a href="./06-gol/index.html">+</a>][<a href="./06-gol/06-gol.txt">src</a>]</h3>
+    <canvas id="canvas-06-gol" width="320" height="180"></canvas>
+    <script src="./06-gol/main.js"></script>
+</div>
+
+
+<div class="gallery-item">
+    <h3>90-kaleidoscope[<a href="./90-kaleidoscope/index.html">+</a>][<a href="./90-kaleidoscope/90-kaleidoscope.txt">src</a>]</h3>
+    <canvas id="canvas-90-kaleidoscope" width="320" height="180"></canvas>
+    <script src="./90-kaleidoscope/main.js"></script>
+</div>
+
+
+<div class="gallery-item">
+    <h3>93-mouse-uv-test[<a href="./93-mouse-uv-test/index.html">+</a>][<a href="./93-mouse-uv-test/93-mouse-uv-test.txt">src</a>]</h3>
+    <canvas id="canvas-93-mouse-uv-test" width="320" height="180"></canvas>
+    <script src="./93-mouse-uv-test/main.js"></script>
+</div>
+
+
+<div class="gallery-item">
+    <h3>94-mouse-spiral[<a href="./94-mouse-spiral/index.html">+</a>][<a href="./94-mouse-spiral/94-mouse-spiral.txt">src</a>]</h3>
+    <canvas id="canvas-94-mouse-spiral" width="320" height="180"></canvas>
+    <script src="./94-mouse-spiral/main.js"></script>
+</div>
+
+
+<div class="gallery-item">
+    <h3>97-magma-folds[<a href="./97-magma-folds/index.html">+</a>][<a href="./97-magma-folds/97-magma-folds.txt">src</a>]</h3>
+    <canvas id="canvas-97-magma-folds" width="320" height="180"></canvas>
+    <script src="./97-magma-folds/main.js"></script>
+</div>
+
+
+<div class="gallery-item">
+    <h3>98-shader-trail[<a href="./98-shader-trail/index.html">+</a>][<a href="./98-shader-trail/98-shader-trail.txt">src</a>]</h3>
+    <canvas id="canvas-98-shader-trail" width="320" height="180"></canvas>
+    <script src="./98-shader-trail/main.js"></script>
+</div>
+
+
+<div class="gallery-item">
+    <h3>99-water-dirtyclosed[<a href="./99-water-dirtyclosed/index.html">+</a>][<a href="./99-water-dirtyclosed/99-water-dirtyclosed.txt">src</a>]</h3>
+    <canvas id="canvas-99-water-dirtyclosed" width="320" height="180"></canvas>
+    <script src="./99-water-dirtyclosed/main.js"></script>
+</div>
+
+
+<div class="gallery-item">
+    <h3>99-waterv2[<a href="./99-waterv2/index.html">+</a>][<a href="./99-waterv2/99-waterv2.txt">src</a>]</h3>
+    <canvas id="canvas-99-waterv2" width="320" height="180"></canvas>
+    <script src="./99-waterv2/main.js"></script>
+</div>
+
+    </div>
+</body>
+
+</html>
